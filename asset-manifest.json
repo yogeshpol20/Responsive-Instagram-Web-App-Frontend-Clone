@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Responsive-Instagram-Web-App-Frontend-Clone/static/css/main.a7429315.css",
+    "main.js": "/Responsive-Instagram-Web-App-Frontend-Clone/static/js/main.eeee6ad1.js",
+    "index.html": "/Responsive-Instagram-Web-App-Frontend-Clone/index.html",
+    "main.a7429315.css.map": "/Responsive-Instagram-Web-App-Frontend-Clone/static/css/main.a7429315.css.map",
+    "main.eeee6ad1.js.map": "/Responsive-Instagram-Web-App-Frontend-Clone/static/js/main.eeee6ad1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7429315.css",
+    "static/js/main.eeee6ad1.js"
+  ]
+}
