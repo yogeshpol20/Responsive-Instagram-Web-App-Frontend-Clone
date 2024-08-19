@@ -78,10 +78,10 @@ const App = () => {
 
 
 //coment out to run  App Offline. 
-  const isOnline = useNetworkStatus();
-  if (!isOnline) {
-    return <OfflinePage />;
-  }
+  // const isOnline = useNetworkStatus();
+  // if (!isOnline) {
+  //   return <OfflinePage />;
+  // }
 
   const adminUser = {
     username: "yogesh_pol",
