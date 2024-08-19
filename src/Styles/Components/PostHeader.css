@@ -1,0 +1,63 @@
+.postHeader {
+  width: 100%;
+  padding: 0 4px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.postHeader-links {
+  text-decoration: none;
+  color: black;
+}
+
+.postHeader-userphoto {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  outline: 2px solid red;
+  outline-offset: 2px;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.postInfo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.postInfo1,
+.postInfo2 {
+  display: flex;
+  align-items: center;
+}
+
+.postProfileName {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.userVerification {
+  color: rgb(0, 149, 246);
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+.postTimeSeparator {
+  color: rgb(115, 115, 115);
+  margin: 0 -2px;
+}
+
+.postTime,
+.postLocation {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgb(115, 115, 115);
+}
+
+.postHeaderOption {
+  border: none;
+  background: none;
+}

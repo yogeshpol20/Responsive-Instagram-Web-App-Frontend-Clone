@@ -1,0 +1,98 @@
+.loginForm-section {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 350px;
+}
+
+.loginForm-content {
+  padding: 10px 0;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 1px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  margin-top: 24px;
+}
+
+.lf-passwordInput {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.lf-passBtn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: rgb(38, 38, 38);
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-left: -85px;
+  position: relative;
+}
+
+.lf-passBtn:hover {
+  color: rgb(150, 150, 150);
+}
+
+.lf-errorMsg {
+  color: rgb(237, 73, 86);
+  margin: 10px 40px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.lf-forgotPass {
+  text-decoration: none;
+  color: rgb(0, 55, 107);
+}
+
+.lf-forgotPass span {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  margin: 10px 0px;
+}
+
+.lf-createAccount {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 1px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lf-createAccount p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.lf-signupLink {
+  text-decoration: none;
+}
+
+.lf-signupLink span {
+  color: rgb(0, 149, 246);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  padding-left: 3px;
+}

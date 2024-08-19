@@ -1,0 +1,73 @@
+.postMenubar {
+    width: 100%;
+    border-top: 1px solid rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+}
+
+.postMenubar-buttons {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    height: 52px;
+    color: rgb(142, 142, 142);
+}
+
+.postMenubar-buttonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.postMenubar-buttons:not(:last-child) {
+    margin-right: 60px;
+}
+
+.postMenubar-buttons:focus {
+    border-top: 1px solid black;
+    color: black;
+}
+
+.postMenubar-icons {
+    font-size: 0.75rem;
+}
+
+.postMenubar-options {
+    margin-left: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 767px) {
+    .postMenubar {
+        border-bottom: 1px solid rgb(219, 219, 219);
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .postMenubar-buttons {
+        height: 44px;
+        width: auto;
+        color: rgb(115, 115, 115);
+    }
+
+    .postMenubar-buttons:not(:last-child) {
+        margin: 0px;
+    }
+
+    .postMenubar-buttons:focus {
+        border-top: 1px solid black;
+        color: rgb(0, 149, 246);
+    }
+
+    .postMenubar-icons {
+        font-size: 24px;
+    }
+
+    .postMenubar-options {
+        display: none;
+    }
+}

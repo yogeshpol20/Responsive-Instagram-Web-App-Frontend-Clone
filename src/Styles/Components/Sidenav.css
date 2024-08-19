@@ -1,0 +1,235 @@
+.top-navbar {
+    display: none;
+}
+
+.sidenav {
+    height: 100vh;
+    border-right: 1px solid rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px 20px;
+    z-index: 10;
+}
+
+.sidenav-header {
+    width: 100%;
+    height: 92px;
+}
+
+.insta-logo {
+    height: 73px;
+    padding: 25px 12px 16px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.insta-icon-container {
+    height: 92px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+
+    text-decoration: none;
+    color: black;
+}
+
+.insta-icon {
+    display: none;
+    padding: 10px;
+}
+
+.sidenav-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.sidenav-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 52px;
+    margin: 2px 0;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.sidenav-button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.sidenav-BtnLink {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.reels {
+    margin: 0 2px !important;
+    height: 22px !important;
+    width: 22px !important;
+}
+
+.sidenav-icon-img {
+    /* margin: 0 2px; */
+    object-fit: cover;
+    height: 28px;
+    width: 28px;
+}
+
+.sidenav-btn-home {
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.sidenav-btn-name {
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 480;
+}
+
+.sidenav-threads-arrow {
+    opacity: 0;
+    margin-left: 68px;
+}
+
+.sidenav-button:hover .sidenav-threads-arrow {
+    opacity: 1;
+}
+
+.sidenav-buttons>button:nth-last-child(2) {
+    margin-top: auto;
+}
+
+
+.sidenav-button:hover .sidenav-icon,
+.sidenav-button:hover .sidenav-icon-img {
+    transform: scale(1.06);
+}
+
+
+@media (min-width: 1264px) and (max-width: 1919px) {
+    .sidenav {
+        width: 244px;
+        position: fixed;
+        z-index: 10;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .sidenav-moreOption {
+        position: fixed;
+        transform: translate(25px, 390px);
+    }
+}
+
+@media screen and (max-width: 1263px) {
+
+    .sidenav {
+        width: 72px;
+        position: fixed;
+        z-index: 10;
+        padding: auto;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .sidenav-moreOption {
+        position: fixed;
+        z-index: 20;
+        transform: translate(155px, 260px);
+    }
+
+    .insta-logo {
+        display: none;
+    }
+
+    .insta-icon {
+        display: block;
+        border-radius: 8px;
+    }
+
+    .insta-icon:hover {
+        background-color: rgb(240, 240, 240);
+    }
+
+    .sidebar-icon-name {
+        display: none;
+    }
+
+    .sidenav-button:hover .sidenav-threads-arrow {
+        opacity: 0;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    /* bottom navbar code */
+    .sidenav-header,
+    .search-btn,
+    .notification-btn,
+    .menu-btn,
+    .thread-btn {
+        display: none;
+    }
+
+    .sidenav-button:hover {
+        background-color: transparent;
+    }
+
+    .sidenav {
+        position: fixed;
+        z-index: 10;
+        background-color: rgb(255, 255, 255);
+        overflow-x: visible;
+        height: 50px;
+        padding: 0px !important;
+        width: 100% !important;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-right: none;
+        border-top: 1px solid rgb(219, 219, 219);
+    }
+
+    .sidenav-buttons {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+    }
+
+    .sidenav-btn-name,
+    .sidenav-btn-home {
+        padding-left: 0;
+    }
+
+    .sidenav-button {
+        width: auto;
+        margin: 2px 0;
+        padding: 2px;
+        height: auto;
+    }
+
+    .sidenav-icon {
+        font-size: 30px !important;
+    }
+
+    .sidenav-icon-img {
+        width: 23px;
+        height: 23px;
+    }
+}

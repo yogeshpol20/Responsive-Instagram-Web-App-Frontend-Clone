@@ -1,0 +1,29 @@
+.loadingPage {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lp-instaLogoContainer {
+    position: absolute;
+}
+
+.lp-instagramLogo {
+    height: 80px;
+    width: 80px;
+}
+
+.lp-metaLogoContainer {
+    position: absolute;
+    bottom: 32px;
+}
+
+.lp-metaLogo {
+    height: 37px;
+    width: 72px;
+}
