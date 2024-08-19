@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import { createContext, useEffect, useState } from "react";
 
 import { useNetworkStatus } from "./Components/NetworkStatus";
@@ -134,7 +135,7 @@ const App = () => {
           {loading ? (
             <LoadingPage />
           ) : (
-            <Routes >
+            <Router >
               <Route path="/loading" element={<LoadingPage />} />
               <Route
                 path="/"
@@ -159,7 +160,7 @@ const App = () => {
                 element={<ProfilePage adminUser={adminUser} />}
               />
                <Route path="*" element={<ErrorPage />} />
-            </Routes>
+            </Router>
           )}
         </UnfollowModalContext.Provider>
       </SwitchLoginFormContext.Provider>
