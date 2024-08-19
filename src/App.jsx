@@ -134,7 +134,7 @@ const App = () => {
           {loading ? (
             <LoadingPage />
           ) : (
-            <Routes basename={process.env.PUBLIC_URL}>
+            <Routes >
               <Route path="/loading" element={<LoadingPage />} />
               <Route
                 path="/"
