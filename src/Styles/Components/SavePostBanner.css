@@ -1,0 +1,26 @@
+.savePostBanner {
+    height: 60px;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 0px 16px;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-60px);
+    position: absolute;
+}
+
+.savePostBanner-message {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.savePostBanner-link {
+    text-decoration: none;
+    color: rgb(0, 149, 246);
+    font-weight: 600;
+    margin-left: auto;
+}

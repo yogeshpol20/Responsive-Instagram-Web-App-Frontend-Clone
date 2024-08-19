@@ -1,0 +1,71 @@
+.footer-instagram {
+    padding: 0 16px;
+    position: relative;
+}
+
+.footer-div1 {
+    margin-bottom: 52px;
+}
+
+.footer-div2 {
+    margin-top: 24px;
+}
+
+.footer-container1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    margin: 0 8px 12px;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-decoration-color: rgb(0, 55, 107);
+}
+.footer-link span {
+    color: rgb(115, 115, 115);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 450;
+}
+
+.footer-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0;
+}
+
+.language {
+    display: inline-block;
+}
+
+.language-select {
+    background: none;
+    outline: none;
+    border: none;
+    color: rgb(115, 115, 115);
+    font-size: 12px;
+}
+
+.company-name {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.company-name span {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: rgb(115, 115, 115);
+    
+}

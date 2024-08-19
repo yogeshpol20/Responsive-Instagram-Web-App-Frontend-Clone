@@ -1,0 +1,69 @@
+
+.suggestions {
+    margin-top: 36px;
+    width: 319px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.suggestions-userProfile {
+    padding: 0 16px;
+}
+
+.suggestions-Container {
+    /* margin: 24px 16px 8px 16px; */
+    margin: 24px 16px 24px 20px;
+}
+
+.suggestions-Header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 4px;
+}
+
+.suggestions-headerName {
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(115, 115, 115);
+    flex-grow: 1;
+}
+
+.suggestions-link {
+    text-decoration: none;
+    color: black;
+}
+
+.suggestions-link span {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+    word-break: break-word;
+}
+
+.suggestions-link span:hover {
+    color: rgb(115, 115, 115);
+}
+
+.suggestedprofiles {
+    padding: 8px 0;
+}
+
+.suggestions-footer {
+    margin-bottom: 8px;
+    padding: 0px 14.2px 38px 14.2px;
+}
+
+.suggestions-copyright {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: rgb(199, 199, 199);
+}

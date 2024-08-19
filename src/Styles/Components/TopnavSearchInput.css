@@ -1,0 +1,43 @@
+.topnavSearchInput {
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    border-radius: 8px;
+    width: 268px;
+    min-width: 125px;
+    height: 36px;
+    padding: 0;
+    transition: width 0.3s ease;
+    /* Add transition for smooth width change */
+}
+
+.topnavSearchInput:focus-within {
+    width: 300px;
+    /* Adjust width when focused */
+}
+
+.topnavSearchInput-icon {
+    height: 20px;
+    width: 20px;
+    color: rgb(142, 142, 142);
+    margin-left: 12px;
+}
+
+.topnavSearchInput-input {
+    flex: 1;
+    /* Fill remaining space */
+    padding: 3px 12px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 16px;
+    transition: width 0.3s ease;
+    /* Add transition for smooth width change */
+}
+
+.topnavSearchInput-input::placeholder {
+    color: rgb(115, 115, 115);
+    font-weight: 400;
+    font-size: 16px;
+}

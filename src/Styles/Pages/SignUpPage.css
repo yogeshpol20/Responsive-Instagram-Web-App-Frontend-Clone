@@ -1,0 +1,92 @@
+.signup-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 44px;
+  flex-grow: 1;
+}
+
+.signup-container {
+  margin-top: 12px;
+  max-width: 350px;
+}
+
+.signup-form-div {
+  padding: 10px 0;
+  border: 1px solid rgb(219, 219, 219);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 350px;
+}
+
+.signup-form {
+  padding-bottom: 20px;
+}
+
+.signup-info {
+  margin: 0 40px 18px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  color: rgb(115, 115, 115);
+}
+
+.contact-info {
+  height: 96px;
+  width: 268px;
+  color: rgb(115, 115, 115);
+  font-size: 12px;
+  line-height: 16px;
+  margin: 15px 40px;
+  text-align: center;
+}
+
+.info-span {
+  line-height: 16px;
+  font-weight: 400;
+  display: block;
+}
+
+.info-anchor {
+  text-decoration: none;
+  color: rgb(0, 55, 107);
+}
+
+.login-div {
+  margin: 10px 0;
+  border: 1px solid rgb(219, 219, 219);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.login-div p {
+  font-size: 14px;
+  margin: 15px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.login-link {
+  text-decoration: none;
+}
+
+.login-link span {
+  color: rgb(0, 149, 246);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  padding-left: 3px;
+}
