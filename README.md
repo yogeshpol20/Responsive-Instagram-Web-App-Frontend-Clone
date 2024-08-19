@@ -86,6 +86,11 @@ React Icons are used
 
 ## Web Page Screenshots
 
+- LandingPage 
+
+![screenshot](App-Screenshots/LandingPage.png)
+![screenshot](App-Screenshots/LandingPage2.png)
+
 - HomePage 
 
 ![screenshot](App-Screenshots/HomePage1.png)
@@ -94,6 +99,52 @@ React Icons are used
 ![screenshot](App-Screenshots/HomePage4.png)
 ![screenshot](App-Screenshots/HomePage5.png)
 ![screenshot](App-Screenshots/HomePage6.png)
+![screenshot](App-Screenshots/HomePage7.png)
+
+- ExplorePage 
+
+![screenshot](App-Screenshots/ExplorePage.png)
+
+- ProfilePage 
+
+![screenshot](App-Screenshots/ProfilePage.png)
+
+- SignUpPage 
+
+![screenshot](App-Screenshots/SignUp.png)
+
+- LoginPage 
+
+![screenshot](App-Screenshots/Login.png)
+
+- ForgotPasswordPage 
+
+![screenshot](App-Screenshots/ForgotPassword.png)
+
+- OfflinePage 
+
+![screenshot](App-Screenshots/OfflinePage.png)
+
+- LoadingPage 
+
+![screenshot](App-Screenshots/Loading.png)
+
+- ErrorPage 
+
+![screenshot](App-Screenshots/Error.png)
+
+- Tab Resolution Screenshots 
+
+![screenshot](App-Screenshots/TabScreen1.png)
+![screenshot](App-Screenshots/TabScreen2.png)
+![screenshot](App-Screenshots/TabScreen3.png)
+
+- Mobile Resolution Screenshots 
+
+![screenshot](App-Screenshots/MobileScreen1.png)
+![screenshot](App-Screenshots/MobileScreen2.png)
+![screenshot](App-Screenshots/MobileScreen3.png)
+
 
 
 # Technologies Used
