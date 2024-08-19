@@ -54,4 +54,13 @@
     "ajv": "^7.2.4",
     "html-webpack-plugin": "^5.6.0"
   }
+  "homepage": "https://<yogeshpol20>.github.io/<Responsive-Instagram-Web-App-Frontend-Clone>",
+  "scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+}
 }
