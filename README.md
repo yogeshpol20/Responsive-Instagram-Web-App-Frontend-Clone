@@ -5,7 +5,7 @@ This ReactJS project is a sleek, responsive web application that emulates Instag
 
 This project highlights my proficiency in front-end development, responsive design.
 
-Try This Website - https://rushikeshpol15.github.io/Responsive-Netflix-Website-Frontend-Clone/
+Have a look (username: yogesh_pol password: Pass@1234) - https://yogeshpol20.github.io/Responsive-Instagram-Web-App-Frontend-Clone/
 
 
 ## Key features of the Web App include:
