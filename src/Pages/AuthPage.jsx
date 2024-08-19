@@ -12,7 +12,7 @@ const AuthPage =  ({authorizeUser}) => {
 
         <main className="authMain">
           <div className="leftContainer">
-            <img src="/public/auth.png" alt="phone image" />
+            <img src="./public/auth.png" alt="phone image" />
           </div>
 
           <section className="rightContainer">
