@@ -88,12 +88,12 @@ React Icons are used
 
 - HomePage 
 
-![App-Screenshot](screenshots/HomePage1.jpg)
-![App Screenshot](screenshots/HomePage2.jpg)
-![App Screenshot](screenshots/HomePage3.jpg)
-![App Screenshot](screenshots/HomePage4.jpg)
-![App Screenshot](screenshots/HomePage5.jpg)
-![App Screenshot](screenshots/HomePage6.jpg)
+![screenshot](App-Screenshots/HomePage1.jpg)
+![screenshot](App-Screenshots/HomePage2.jpg)
+![screenshot](App-Screenshots/HomePage3.jpg)
+![screenshot](App-Screenshots/HomePage4.jpg)
+![screenshot](App-Screenshots/HomePage5.jpg)
+![screenshot](App-Screenshots/HomePage6.jpg)
 
 
 # Technologies Used
