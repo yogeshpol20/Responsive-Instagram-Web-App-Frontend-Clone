@@ -78,10 +78,10 @@ const App = () => {
 
 
 //coment out to run  App Offline. 
-  // const isOnline = useNetworkStatus();
-  // if (!isOnline) {
-  //   return <OfflinePage />;
-  // }
+  const isOnline = useNetworkStatus();
+  if (!isOnline) {
+    return <OfflinePage />;
+  }
 
   const adminUser = {
     username: "yogesh_pol",
@@ -134,7 +134,7 @@ const App = () => {
           {loading ? (
             <LoadingPage />
           ) : (
-            <Routes>
+            <Routes basename={process.env.PUBLIC_URL}>
               <Route path="/loading" element={<LoadingPage />} />
               <Route
                 path="/"
