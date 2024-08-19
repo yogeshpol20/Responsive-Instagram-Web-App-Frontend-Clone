@@ -84,6 +84,17 @@ React Icons are used
 - Web Browser
 - Internet connection
 
+## Web Page Screenshots
+
+- HomePage 
+
+![App-Screenshot](screenshots/HomePage1.jpg)
+![App Screenshot](screenshots/HomePage2.jpg)
+![App Screenshot](screenshots/HomePage3.jpg)
+![App Screenshot](screenshots/HomePage4.jpg)
+![App Screenshot](screenshots/HomePage5.jpg)
+![App Screenshot](screenshots/HomePage6.jpg)
+
 
 # Technologies Used
 
