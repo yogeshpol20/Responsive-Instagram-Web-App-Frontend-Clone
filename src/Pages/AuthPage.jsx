@@ -12,11 +12,7 @@ const AuthPage =  ({authorizeUser}) => {
 
         <main className="authMain">
           <div className="leftContainer">
-<<<<<<< HEAD
             <img src="./auth.png" alt="phone image" />
-=======
-            <img src="`${process.env.PUBLIC_URL}/auth.png`" alt="phone image" />
->>>>>>> 8586afbd6d22fb83d5345dca1d6674678a917227
           </div>
 
           <section className="rightContainer">
