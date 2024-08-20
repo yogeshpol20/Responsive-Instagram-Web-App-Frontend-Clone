@@ -9,7 +9,6 @@
     flex-grow: 1;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
 }
 
 .homePageContent {
@@ -42,6 +41,10 @@
     margin-top: 40px;
     display: flex;
     justify-content: center;
+}
+
+.homePage-topNavbar{
+    display: none;
 }
 
 @media (min-width: 1264px) and (max-width: 1919px) {
@@ -83,7 +86,7 @@
 @media screen and (max-width: 767px) {
 
     .hp-rightSide {
-        width: 100%;
+        width: calc(100%);
         height: calc(100vh - 120px);
         margin: 60px auto;
         display: flex;
@@ -102,20 +105,15 @@
     }
 
     .timelinePosts {
-
         width: 95%;
         margin-left: 1em;
         margin-right: 1em;
     }
-}
-
-@media screen and (max-width: 767px) {
 
     /* mobile screen Top navbar code */
-    .top-navbar {
+    .homePage-topNavbar {
         position: fixed;
         z-index: 10;
-        display: block;
         top: 0;
         left: 0;
         right: 0;
@@ -130,18 +128,18 @@
         align-items: center;
     }
 
-    .navbar-instaLogo {
+    .hp-topNavbar-logo {
         width: 103px;
         height: 29px;
         margin-top: 8px;
     }
 
-    .navbar-container2 {
+    .hp-topNavbar-container {
         display: flex;
         align-items: center;
     }
 
-    .navbar-searchBox {
+    .hp-topNavbar-searchBox {
         display: flex;
         align-items: center;
         background-color: rgb(240, 240, 240);
@@ -154,19 +152,18 @@
         /* Add transition for smooth width change */
     }
 
-    .navbar-searchBox:focus-within {
+    .hp-topNavbar-searchBox:focus-within {
         width: 300px;
         /* Adjust width when focused */
     }
 
-    .navbar-searchIcon {
-        height: 20px;
-        width: 20px;
+    .hp-topNavbar-searchIcon {
+        font-size: 20px;
         color: rgb(142, 142, 142);
         margin-left: 12px;
     }
 
-    .navbar-input {
+    .hp-topNavbar-input {
         flex: 1;
         /* Fill remaining space */
         padding: 3px 12px;
@@ -179,15 +176,14 @@
         /* Add transition for smooth width change */
     }
 
-    .navbar-input::placeholder {
+    .hp-topNavbar-input::placeholder {
         color: rgb(115, 115, 115);
         font-weight: 400;
         font-size: 16px;
     }
 
-    .navbar-heartIcon {
-        height: 26px;
-        width: 26px;
+    .hp-topNavbar-heartIcon{
+        font-size: 26px;
         margin-left: 12px;
     }
 }

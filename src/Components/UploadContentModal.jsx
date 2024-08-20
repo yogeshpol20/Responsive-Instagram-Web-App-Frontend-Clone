@@ -2,6 +2,7 @@ import React, { useContext, useRef, useEffect } from "react";
 import "../Styles/Components/UploadContentModal.css";
 import { createNewPostContext } from "../Pages/ProfilePage";
 import { IoMdClose } from "react-icons/io";
+import photoVideoIcon from "../assets/images/photovideoicon.png";
 
 const UploadContentModal = () => {
   const { setIsUploadContent } = useContext(createNewPostContext);
@@ -45,7 +46,7 @@ const UploadContentModal = () => {
 
         <div className="uploadContent-container2">
           <div className="uploadContent-icon">
-            <img src="/photovideoicon.png" alt="photo video icon" />
+            <img src={photoVideoIcon} alt="photo video icon" />
           </div>
           <span className="uploadContent-info">
             Drag photos and videos here

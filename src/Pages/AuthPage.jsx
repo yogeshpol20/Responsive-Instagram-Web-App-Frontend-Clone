@@ -3,6 +3,7 @@ import "../Styles/Pages/AuthPage.css";
 import LoginForm from "../Components/LoginForm";
 import Footer from "../Components/Footer";
 import PageTitle from "../Components/PageTitle";
+import phoneImg from '../assets/images/auth.png';
 
 const AuthPage =  ({authorizeUser}) => {
   return (
@@ -12,7 +13,7 @@ const AuthPage =  ({authorizeUser}) => {
 
         <main className="authMain">
           <div className="leftContainer">
-            <img src="./auth.png" alt="phone image" />
+            <img src={phoneImg} alt="phone image" />
           </div>
 
           <section className="rightContainer">

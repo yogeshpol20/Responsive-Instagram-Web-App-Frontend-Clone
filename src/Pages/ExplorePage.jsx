@@ -7,22 +7,38 @@ import LoadingEffect from "../Components/LoadingEffect";
 import TopnavSearchInput from "../Components/TopnavSearchInput";
 import { useNavigate } from "react-router-dom";
 
+import photo1 from "../assets/images/marquez.jpg";
+import photo2 from "../assets/images/yachtmaster.jpg";
+import photo3 from "../assets/images/danielricciardo.jpg";
+import photo4 from "../assets/images/bmwracing.jpg";
+import photo5 from "../assets/images/book.jpg";
+import photo6 from "../assets/images/banana.jpg";
+import photo7 from "../assets/images/positano.jpg";
+import photo8 from "../assets/images/tridhac.jpg";
+import photo9 from "../assets/images/kylie.jpg";
+import photo10 from "../assets/images/house.jpg";
+import photo11 from "../assets/images/panigale.jpg";
+import photo12 from "../assets/images/landohelmet.jpg";
+import video1 from "../assets/video/motogp.mp4";
+import video2 from "../assets/video/gopro.mp4";
+import video3 from "../assets/video/swimming.mp4";
+
 const mediaItems = [
-  { type: "img", src: "/marquez.jpg", alt: "marc marquez" },
-  { type: "img", src: "yachtmaster.jpg", alt: "Rolex watch" },
-  { type: "video", src: "/motogp.mp4" },
-  { type: "img", src: "/danielricciardo.jpg", alt: "Ricciardo" },
-  { type: "img", src: "bmwracing.jpg", alt: "BMW Racing" },
-  { type: "video", src: "/gopro.mp4" },
-  { type: "img", src: "/book.jpg", alt: "Book" },
-  { type: "img", src: "/banana.jpg", alt: "banana" },
-  { type: "img", src: "/post1.jpg", alt: "amalfi coast" },
-  { type: "img", src: "/tridhac.jpg", alt: "tridha" },
-  { type: "img", src: "/kylie.jpg", alt: "Sprinter" },
-  { type: "img", src: "/house.jpg", alt: "house" },
-  { type: "video", src: "/swimming.mp4" },
-  { type: "img", src: "/panigale.jpg", alt: "Panigale V4R" },
-  { type: "img", src: "/landohelmet.jpg", alt: "Lando Norris" },
+  { type: "img", src: photo1, alt: "marc marquez" },
+  { type: "img", src: photo2, alt: "Rolex watch" },
+  { type: "video", src: video1 },
+  { type: "img", src: photo3, alt: "Ricciardo" },
+  { type: "img", src: photo4, alt: "BMW Racing" },
+  { type: "video", src: video2 },
+  { type: "img", src: photo5, alt: "Book" },
+  { type: "img", src: photo6, alt: "banana" },
+  { type: "img", src: photo7, alt: "amalfi coast" },
+  { type: "img", src: photo8, alt: "tridha" },
+  { type: "img", src: photo9, alt: "Sprinter" },
+  { type: "img", src: photo10, alt: "house" },
+  { type: "video", src: video3 },
+  { type: "img", src: photo11, alt: "Panigale V4R" },
+  { type: "img", src: photo12, alt: "Lando Norris" },
 ];
 
 const ExplorePage = ({adminUser}) => {

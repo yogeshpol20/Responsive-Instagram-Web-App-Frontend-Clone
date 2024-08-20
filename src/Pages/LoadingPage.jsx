@@ -1,6 +1,8 @@
 import React from "react";
 import "../Styles/Pages/LoadingPage.css";
 import PageTitle from "../Components/PageTitle";
+import loadingLogo from "../assets/images/loading-logo.png";
+import metaLogo from "../assets/images/meta-logo.png";
 
 const LoadingPage = () => {
   return (
@@ -11,14 +13,14 @@ const LoadingPage = () => {
 
         <div className="lp-instaLogoContainer">
           <img
-            src="/loading-logo.png"
+            src={loadingLogo}
             alt="Instagram"
             className="lp-instagramLogo"
           />
         </div>
 
         <div className="lp-metaLogoContainer">
-          <img src="/meta-logo.png" alt="Meta" className="lp-metaLogo" />
+          <img src={metaLogo} alt="Meta" className="lp-metaLogo" />
         </div>
         
       </article>

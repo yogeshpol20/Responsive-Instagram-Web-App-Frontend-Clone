@@ -118,11 +118,11 @@
     grid-row: 6/7;
 }
 
-@media (min-width: 1264px) and (max-width: 1919px) {
+.explorePage-topNavbar {
+    display: none;
+}
 
-    .explorePage-topNavbar {
-        display: none;
-    }
+@media (min-width: 1264px) and (max-width: 1919px) {
 
     .ep-leftSide {
         width: 244px;
@@ -137,10 +137,6 @@
 }
 
 @media screen and (max-width: 1263px) {
-
-    .explorePage-topNavbar {
-        display: none;
-    }
 
     .ep-leftSide {
         width: 72px;

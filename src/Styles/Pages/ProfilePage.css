@@ -20,21 +20,19 @@
     width: calc(100% - 40px);
 }
 
+.profilePage-topNavbar{
+    display: none;
+}
+
 @media (min-width: 1264px) and (max-width: 1919px) {
     .profilePage-leftSide {
         width: 244px;
-    }
-    .profilePage-topNavbar{
-        display: none;
     }
 }
 
 @media screen and (max-width: 1263px) {
     .profilePage-leftSide {
         width: 72px;
-    }
-    .profilePage-topNavbar{
-        display: none;
     }
 }
 

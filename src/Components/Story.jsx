@@ -3,74 +3,108 @@ import "../Styles/Components/Story.css";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 
+import storyUserDp1 from "../assets/images/marcmarquez93.jpg";
+import storyUserDp2 from "../assets/images/motogp.jpg";
+import storyUserDp3 from "../assets/images/tridhac.jpg";
+import storyUserDp4 from "../assets/images/hegdepooja.jpg";
+import storyUserDp5 from "../assets/images/ducati.jpg";
+import storyUserDp6 from "../assets/images/rolex.jpg";
+import storyUserDp7 from "../assets/images/bmw.jpg";
+import storyUserDp8 from "../assets/images/redbullracing.jpg";
+import storyUserDp9 from "../assets/images/hrc_motogp.jpg";
+import storyUserDp10 from "../assets/images/evoindia.jpg";
+import storyUserDp11 from "../assets/images/lando.jpg";
+import storyUserDp12 from "../assets/images/gopro.jpg";
+import storyUserDp13 from "../assets/images/danielricciardo.jpg";
+import storyUserDp14 from "../assets/images/maxverstappen1.jpg";
+import storyUserDp15 from "../assets/images/omega.jpg";
+import storyUserDp16 from "../assets/images/nehasharma.jpg";
+import storyUserDp17 from "../assets/images/noprofile.jpg";
+
 const storyData = [
   {
-    src: "marcmarquez93.jpg",
+    id: 1,
+    src: storyUserDp1,
     username: "marcmarquez93",
   },
   {
-    src: "motogp.jpg",
+    id: 2,
+    src: storyUserDp2,
     username: "motogp",
   },
   {
-    src: "tridhac.jpg",
+    id: 3,
+    src: storyUserDp3,
     username: "tridhac",
   },
   {
-    src: "hegdepooja.jpg",
+    id: 4,
+    src: storyUserDp4,
     username: "hegdepooja",
   },
   {
-    src: "ducati.jpg",
+    id: 5,
+    src: storyUserDp5,
     username: "ducaticorse",
   },
   {
-    src: "rolex.jpg",
+    id: 6,
+    src: storyUserDp6,
     username: "Rolex",
   },
   {
-    src: "bmw.jpg",
+    id: 7,
+    src: storyUserDp7,
     username: "bmw",
   },
   {
-    src: "redbullracing.jpg",
+    id: 8,
+    src: storyUserDp8,
     username: "redbullracing",
   },
   {
-    src: "hrc_motogp.jpg",
+    id: 9,
+    src: storyUserDp9,
     username: "hrc_motogp",
   },
   {
-    src: "evoindia.jpg",
+    id: 10,
+    src: storyUserDp10,
     username: "evoindia",
   },
-
   {
-    src: "lando.jpg",
+    id: 11,
+    src: storyUserDp11,
     username: "landonorris",
   },
   {
-    src: "gopro.jpg",
+    id: 12,
+    src: storyUserDp12,
     username: "gopro",
   },
   {
-    src: "danielricciardo.jpg",
+    id: 13,
+    src: storyUserDp13,
     username: "danielricciardo",
   },
   {
-    src: "maxverstappen1.jpg",
+    id: 14,
+    src: storyUserDp14,
     username: "maxverstappen1",
   },
   {
-    src: "omega.jpg",
+    id: 15,
+    src: storyUserDp15,
     username: "omega",
   },
   {
-    src: "nehasharma.jpg",
+    id: 16,
+    src: storyUserDp16,
     username: "nehasharmaofficial",
   },
   {
-    src: "noprofile.jpg",
+    id: 17,
+    src: storyUserDp17,
     username: "user1",
   },
 ];

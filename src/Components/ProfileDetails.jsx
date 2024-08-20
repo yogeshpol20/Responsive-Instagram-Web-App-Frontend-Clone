@@ -99,7 +99,7 @@ const ProfileDetails = ({
         <div className="pd-lowResMenubar1">
 
           <Link to="#" className="pd-username profileDetails-links">
-            <h2>yogesh_pol</h2>
+          <h2>{adminUser.username}</h2>
           </Link>
           
           {isVerified ? <MdVerified className="pd-userVerification" /> : null}

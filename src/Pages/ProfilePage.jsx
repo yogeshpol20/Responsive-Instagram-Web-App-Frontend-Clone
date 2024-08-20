@@ -127,7 +127,7 @@ const ProfilePage = ({adminUser}) => {
       </section>
 
       {/* code for mobile top navbar */}
-      <header className="profilePage-topNavbar">
+      <nav className="profilePage-topNavbar">
         <Link to="#" className="pp-topNavbar-links">
           <BsGearWide className="pp-topNavbar-icons" />
         </Link>
@@ -137,7 +137,7 @@ const ProfilePage = ({adminUser}) => {
           className="pp-topNavbar-button"
         >
           <span>
-            yogesh_pol
+            {adminUser.username}
             <MdKeyboardArrowDown
               size={20}
               className="pp-topNavbar-arrowIcon"
@@ -147,7 +147,8 @@ const ProfilePage = ({adminUser}) => {
         <Link to="#" className="pp-topNavbar-links">
           <FaThreads className="pp-topNavbar-icons" />
         </Link>
-      </header>
+      </nav>
+
     </article>
       </createNewPostContext.Provider>
     </>

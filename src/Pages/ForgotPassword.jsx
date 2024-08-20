@@ -6,6 +6,7 @@ import Input from "../Components/Input";
 import Button from "../Components/Button";
 import PageTitle from "../Components/PageTitle";
 import { GoLock } from "react-icons/go";
+import logo from "../assets/images/logo.png";
 
 const ForgotPassword = () => {
   const [input, setInput] = useState("");
@@ -41,11 +42,10 @@ const ForgotPassword = () => {
       <PageTitle title="Reset Password &middot; Instagram" />
 
       <article className="forgot-password">
-
         <nav className="fp-header">
           <div className="fp-headerContainer">
             <Link to="/" className="fp-headerlogo-link">
-              <img src="/logo.png" alt="Instagram" />
+              <img src={logo} alt="Instagram" />
             </Link>
           </div>
         </nav>

@@ -1,6 +1,8 @@
 import React from "react";
 import "../Styles/Components/GetApp.css";
 import { Link } from "react-router-dom";
+import appstoreLogo from "../assets/images/appstore.png";
+import playstoreLogo from "../assets/images/playstore.png";
 
 const GetApp = () => {
   const appstoreLink = "https://apps.apple.com/us/app/instagram/id389801252";
@@ -13,10 +15,10 @@ const GetApp = () => {
       <div className="container-name">Get the app.</div>
       <div className="app-platform">
         <Link target="_blank" to={appstoreLink} className="appstore applink">
-          <img src="appstore.png" alt="download on the App Store" />
+          <img src={appstoreLogo} alt="download on the App Store" />
         </Link>
         <Link target="_blank" to={playstorelink} className="playstore applink">
-          <img src="playstore.png" alt="Get it on Google Play" />
+          <img src={playstoreLogo} alt="Get it on Google Play" />
         </Link>
       </div>
     </div>

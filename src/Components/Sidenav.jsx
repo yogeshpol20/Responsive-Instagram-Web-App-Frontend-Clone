@@ -19,6 +19,9 @@ import { IoMdHeart } from "react-icons/io";
 import { RiAddBoxFill } from "react-icons/ri";
 import { TfiMenu } from "react-icons/tfi";
 
+import logo from "../assets/images/logo.png";
+import reelsIcon from "../assets/images/reels-icon.png";
+
 import SidenavMore from "./SidenavMore";
 
 
@@ -49,7 +52,7 @@ const Sidenav = ({adminUser}) => {
   return (
     <div className="sidenav">
       <div className="sidenav-header">
-        <img src="/logo.png" alt="Instagram logo" className="insta-logo" />
+        <img src={logo} alt="Instagram logo" className="insta-logo" />
         <Link to="/homepage" className="insta-icon-container">
           <FaInstagram size={45} className="insta-icon" />
         </Link>
@@ -101,7 +104,7 @@ const Sidenav = ({adminUser}) => {
         <button className="sidenav-button">
           <Link to="#" className="sidenav-BtnLink">
             <img
-              src="/reels-icon.png"
+              src={reelsIcon}
               className="sidenav-icon-img reels"
               alt="Reels"
             />

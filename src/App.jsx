@@ -1,5 +1,5 @@
+import { Route, Routes } from "react-router-dom";
 import { createContext, useEffect, useState } from "react";
-import { Route, Router } from "react-router-dom";
 import { useNetworkStatus } from "./Components/NetworkStatus";
 import OfflinePage from "./Pages/OfflinePage";
 import LoadingPage from "./Pages/LoadingPage";
@@ -10,58 +10,62 @@ import ForgotPassword from "./Pages/ForgotPassword";
 import HomePage from "./Pages/HomePage";
 import ProfilePage from "./Pages/ProfilePage";
 import ExplorePage from "./Pages/ExplorePage";
-import ErrorPage from './Pages/ErrorPage';
+import ErrorPage from "./Pages/ErrorPage";
 
+import profilePhoto from "./assets/images/marc.jpg";
+import jackMason from './assets/images/jackmason.jpg';
+import jennifer from './assets/images/jeniffer.jpg';
+import biker from './assets/images/biker.jpg';
+import coffeeshop from './assets/images/coffeeshop.jpg';
+import noprofile from './assets/images/noprofile.jpg';
 
 export const SwitchLoginFormContext = createContext();
 export const UnfollowModalContext = createContext();
 
 const App = () => {
-
   // SwitchLoginForm modal states.
   const [isSwitchLoginForm, setIsSwitchloginForm] = useState(false);
-
 
   //UnfollowContext states.
   const [isUnfollow, setIsUnfollow] = useState(false);
 
   // const [followStatus, setFollowStatus] = useState("Follow");
-  let[FollwerClickedObj,setFollowerClickedObj]=useState({});
+  let [FollwerClickedObj, setFollowerClickedObj] = useState({});
   const [profiles, setProfiles] = useState([
     {
       id: 1,
-      src: "jackmason.jpg",
+      src: jackMason,
       username: "jackmason",
       suggestion: "suggested for you",
-      followStatus:'Follow',
+      followStatus: "Follow",
     },
     {
       id: 2,
-      src: "jeniffer.jpg",
+      src: jennifer,
       username: "jennifer__",
       suggestion: "suggested for you",
-      followStatus:'Follow',
+      followStatus: "Follow",
     },
     {
       id: 3,
-      src: "biker.jpg",
+      src: biker,
       username: "fast_bikers",
       suggestion: "New to Instagram",
-      followStatus:'Follow',
+      followStatus: "Follow",
     },
     {
       id: 4,
-      src: "coffeeshop.jpg",
+      src: coffeeshop,
       username: "galaxy_cafe",
       suggestion: "New to Instagram",
-      followStatus:'Follow',
+      followStatus: "Follow",
     },
     {
       id: 5,
-      src: "noprofile.jpg",
+      src: noprofile,
       username: "alex4778",
       suggestion: "New to Instagram",
-      followStatus:'Follow',
+      followStatus: "Follow",
     },
   ]);
 
@@ -75,12 +79,12 @@ const App = () => {
     return () => clearTimeout(timer); // Cleanup the timer
   }, []);
 
-
-//coment out to run  App Offline. 
+  // comment out to run  App Offline.
   const isOnline = useNetworkStatus();
   if (!isOnline) {
     return <OfflinePage />;
   }
+
 
   const adminUser = {
     username: "yogesh_pol",
@@ -90,7 +94,7 @@ const App = () => {
     posts: 0,
     bio: "❤️ 🏁🏎️ 🏍️ 🎧 📸 🎮 🌏",
     profileName: "yogesh Pol",
-    profilePhoto: "/marc.jpg",
+    profilePhoto:profilePhoto,
   };
 
   const authorizeUser = (username, password) => {
@@ -103,13 +107,14 @@ const App = () => {
     }
   };
 
-  function forsetFollowerClickedObj(paraid,parasrc,parausername)
-  {
-    let obj={
+
+
+  function forsetFollowerClickedObj(paraid, parasrc, parausername) {
+    let obj = {
       id: paraid,
       src: parasrc,
       username: parausername,
-    }
+    };
     setFollowerClickedObj(obj);
   }
 
@@ -127,14 +132,13 @@ const App = () => {
             // followStatus,
             // setFollowStatus,
             FollwerClickedObj,
-            forsetFollowerClickedObj
+            forsetFollowerClickedObj,
           }}
         >
           {loading ? (
             <LoadingPage />
           ) : (
-            <Router >
-              <Route path="/loading" element={<LoadingPage />} />
+            <Routes>
               <Route
                 path="/"
                 element={<AuthPage authorizeUser={authorizeUser} />}
@@ -157,8 +161,10 @@ const App = () => {
                 path="/profilepage"
                 element={<ProfilePage adminUser={adminUser} />}
               />
-               <Route path="*" element={<ErrorPage />} />
-            </Router>
+              <Route path="/loading" element={<LoadingPage />} />
+
+              <Route path="*" element={<ErrorPage />} />
+            </Routes>
           )}
         </UnfollowModalContext.Provider>
       </SwitchLoginFormContext.Provider>
