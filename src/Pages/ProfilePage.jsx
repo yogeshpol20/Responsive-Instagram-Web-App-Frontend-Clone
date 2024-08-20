@@ -48,14 +48,14 @@ const ProfilePage = ({adminUser}) => {
     setIsSwitchloginForm(true); // Trigger the form visibility
   }
 
-  useEffect(
-    () => {
-      // Check Authentication on component mount
-      const user = localStorage.getItem("user");
-      if (!user) {
-        navigate("/"); // Redirect to login page if not authenticated
-      }
-    }, [navigate]);
+
+  useEffect(() => {
+    // Check Authentication on component mount
+    const user = localStorage.getItem("user");
+    if (!user) {
+      navigate("/"); // Redirect to auth page if not authenticated
+    }
+  }, [navigate]);
 
   return (
     <>

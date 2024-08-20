@@ -10,6 +10,8 @@ import InstagramLogo from "./InstagramLogo";
 import Button from "./Button";
 
 const LoginForm = ({authorizeUser}) => {
+  const navigate = useNavigate();
+  
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loginError, setLoginError] = useState({ display: "none" });
@@ -20,8 +22,6 @@ const LoginForm = ({authorizeUser}) => {
     opacity: "0.7",
     backgroundColor: "rgb(0,149,246)",
   });
-
-  const navigate = useNavigate();
 
   useEffect(() => {
     if (username && password.length >= 6) {
@@ -38,8 +38,6 @@ const LoginForm = ({authorizeUser}) => {
 
   const handleLogin = () => {
     if (authorizeUser(username, password)) {
-      // Redirect to the authorized area of your app
-      // window.location.href = "/homepage";
       navigate("/homepage");  // Redirect to homepage
     } else {
       setLoginError({ display: "block" });

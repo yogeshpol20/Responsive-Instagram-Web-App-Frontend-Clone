@@ -49,7 +49,7 @@ const ExplorePage = ({adminUser}) => {
     // Check Authentication on component mount
     const user = localStorage.getItem("user");
     if (!user) {
-      navigate("/"); // Redirect to login page if not authenticated
+      navigate("/"); // Redirect to auth page if not authenticated
     }
   }, [navigate]);
 

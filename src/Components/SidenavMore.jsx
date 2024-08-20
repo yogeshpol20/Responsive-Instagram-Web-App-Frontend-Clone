@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import "../Styles/Components/SidenavMore.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BsGearWide } from "react-icons/bs";
 import { BiBookmark } from "react-icons/bi";
 import { AiOutlineSun } from "react-icons/ai";
@@ -9,20 +9,21 @@ import { TbAlertSquare } from "react-icons/tb";
 import  {SwitchLoginFormContext} from '../App';
 
 const SidenavMore = ({setMoreOption}) => {
+  let navigate = useNavigate();
 
-  const {setIsSwitchloginForm} = useContext(SwitchLoginFormContext);
+  const { setIsSwitchloginForm } = useContext(SwitchLoginFormContext);
 
   const containerRef = useRef(null);
 
-   //Logout Functionality
-   const logout = () => {
-     localStorage.removeItem("user");
-     window.location.href = "/";
-   };
+  //Logout Functionality
+  const logout = () => {
+    localStorage.removeItem("user");
+    navigate("/"); // Redirect to authpage
+  };
 
-  const handleSwitchAccount = ()=>{
+  const handleSwitchAccount = () => {
     setIsSwitchloginForm(true);
-  }
+  };
 
   const handleClickOutside = (event) => {
     if (containerRef.current && !containerRef.current.contains(event.target)) {
@@ -54,10 +55,7 @@ const SidenavMore = ({setMoreOption}) => {
         <span className="sidenavMore-options">Saved</span>
       </Link>
 
-      <button
-        className="sidenavMore-buttons"
-        type="button"
-      >
+      <button className="sidenavMore-buttons" type="button">
         <AiOutlineSun className="sidenavMore-icons" />
         <span className="sidenavMore-options">Switch appearance</span>
       </button>
@@ -68,8 +66,12 @@ const SidenavMore = ({setMoreOption}) => {
       </Link>
 
       <div className="sidenavMore-seperator1"></div>
-     
-      <button className="sidenavMore-buttons" type="button" onClick={handleSwitchAccount}>
+
+      <button
+        className="sidenavMore-buttons"
+        type="button"
+        onClick={handleSwitchAccount}
+      >
         <span className="sidenavMore-options">Switch accounts</span>
       </button>
 
@@ -78,7 +80,6 @@ const SidenavMore = ({setMoreOption}) => {
       <button type="button" onClick={logout} className="sidenavMore-buttons">
         <span className="sidenavMore-options">Log out</span>
       </button>
-
     </div>
   );
 };

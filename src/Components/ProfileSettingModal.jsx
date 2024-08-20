@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import "../Styles/Components/ProfileSettingModal.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ProfileSettingModal = ({isSettingsOption,setIsSettingsOption}) => {
   const containerRef = useRef(null);
+  let navigate = useNavigate();
 
   const handleCancel = () => {
     setIsSettingsOption(!isSettingsOption);
@@ -12,7 +13,7 @@ const ProfileSettingModal = ({isSettingsOption,setIsSettingsOption}) => {
   //Logout Functionality
   const logout = () => {
     localStorage.removeItem("user");
-    window.location.href = "/";
+    navigate("/"); // Redirect to authpage
   };
 
   const handleClickOutside = (event) => {
@@ -50,7 +51,11 @@ const ProfileSettingModal = ({isSettingsOption,setIsSettingsOption}) => {
           Supervision
         </Link>
 
-        <button type="button" onClick={logout} className="profileSettings-buttons">
+        <button
+          type="button"
+          onClick={logout}
+          className="profileSettings-buttons"
+        >
           Log Out
         </button>
 
