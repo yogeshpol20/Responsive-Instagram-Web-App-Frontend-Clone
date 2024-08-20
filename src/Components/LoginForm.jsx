@@ -39,7 +39,8 @@ const LoginForm = ({authorizeUser}) => {
   const handleLogin = () => {
     if (authorizeUser(username, password)) {
       // Redirect to the authorized area of your app
-      window.location.href = '/homepage';
+      // window.location.href = "/homepage";
+      navigate("/homepage");  // Redirect to homepage
     } else {
       setLoginError({ display: "block" });
     }

@@ -53,7 +53,6 @@ const HomePage = ({adminUser}) => {
   }, [navigate]);
 
 
-
    // mobile navbar input functions.
   const handleInputFocus = () => {
     setInputFocused(true);
