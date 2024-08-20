@@ -7,11 +7,11 @@ import { NetworkStatusProvider } from "./Components/NetworkStatus";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <BrowserRouter>
+  // <HashRouter>
     <NetworkStatusProvider>
       <App />
     </NetworkStatusProvider>
-  // </BrowserRouter>
+  // </HashRouter>
 );
 
 
