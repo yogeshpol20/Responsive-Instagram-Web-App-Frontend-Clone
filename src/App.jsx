@@ -1,10 +1,7 @@
-// import { Routes, Route } from "react-router-dom";
-import { HashRouter as Router } from "react-router-dom";
 import { createContext, useEffect, useState } from "react";
-
+import { Route, Router } from "react-router-dom";
 import { useNetworkStatus } from "./Components/NetworkStatus";
 import OfflinePage from "./Pages/OfflinePage";
-
 import LoadingPage from "./Pages/LoadingPage";
 import AuthPage from "./Pages/AuthPage";
 import SignUp from "./Pages/SignUpPage";
@@ -14,6 +11,7 @@ import HomePage from "./Pages/HomePage";
 import ProfilePage from "./Pages/ProfilePage";
 import ExplorePage from "./Pages/ExplorePage";
 import ErrorPage from './Pages/ErrorPage';
+
 
 export const SwitchLoginFormContext = createContext();
 export const UnfollowModalContext = createContext();
