@@ -16,9 +16,9 @@ const SidenavMore = ({setMoreOption}) => {
 
    //Logout Functionality
    const logout = () => {
-    sessionStorage.removeItem("user");
-    window.location.href = '/';
-  };
+     localStorage.removeItem("user");
+     window.location.href = "/";
+   };
 
   const handleSwitchAccount = ()=>{
     setIsSwitchloginForm(true);

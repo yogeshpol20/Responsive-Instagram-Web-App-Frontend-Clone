@@ -100,7 +100,7 @@ const App = () => {
   const authorizeUser = (username, password) => {
     if (username === adminUser.username && password === adminUser.password) {
       // Store user data in sessionStorage
-      sessionStorage.setItem("user", JSON.stringify(adminUser));
+      localStorage.setItem("user", JSON.stringify(adminUser));
       return true; // Successful login
     } else {
       return false; // Failed login
