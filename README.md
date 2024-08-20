@@ -5,7 +5,7 @@ This ReactJS project is a sleek, responsive web application that emulates Instag
 
 This project highlights my proficiency in front-end development, responsive design.
 
-Try This Website - https://rushikeshpol15.github.io/Responsive-Netflix-Website-Frontend-Clone/
+Have a look (username: yogesh_pol password: Pass@1234) - https://yogeshpol20.github.io/Responsive-Instagram-Web-App-Frontend-Clone/
 
 
 ## Key features of the Web App include:
@@ -84,246 +84,66 @@ React Icons are used
 - Web Browser
 - Internet connection
 
-
 ## Web Page Screenshots
+
+- LandingPage 
+
+![screenshot](App-Screenshots/LandingPage.png)
+![screenshot](App-Screenshots/LandingPage2.png)
 
 - HomePage 
 
-![App Screenshot](screenshots/HomePage1.jpg)
-![App Screenshot](screenshots/HomePage2.jpg)
-![App Screenshot](screenshots/HomePage3.jpg)
-![App Screenshot](screenshots/HomePage4.jpg)
-![App Screenshot](screenshots/HomePage5.jpg)
-![App Screenshot](screenshots/HomePage6.jpg)
+![screenshot](App-Screenshots/HomePage1.png)
+![screenshot](App-Screenshots/HomePage2.png)
+![screenshot](App-Screenshots/HomePage3.png)
+![screenshot](App-Screenshots/HomePage4.png)
+![screenshot](App-Screenshots/HomePage5.png)
+![screenshot](App-Screenshots/HomePage6.png)
+![screenshot](App-Screenshots/HomePage7.png)
 
-### In HomePage i have used regular Expression which will confirm the email Input by the user If the Email have a valid syntax then user able to navigate on next Get Started page ###
+- ExplorePage 
 
-![App Screenshot](screenshots/HomePage7.jpg)
+![screenshot](App-Screenshots/ExplorePage.png)
 
-### inputed Email will send to the parent component with the Help of callbacks after that parent component will send Email to the JoinNowOne Component. ###
+- ProfilePage 
 
-![App Screenshot](screenshots/JoinNowOne3.jpg)
+![screenshot](App-Screenshots/ProfilePage.png)
 
+- SignUpPage 
 
+![screenshot](App-Screenshots/SignUp.png)
 
+- LoginPage 
 
-- JoinNowMain
+![screenshot](App-Screenshots/Login.png)
 
-![App Screenshot](screenshots/JoinNowMain1.jpg)
-![App Screenshot](screenshots/JoinNowMain2.jpg)
+- ForgotPasswordPage 
 
-- JoinNowOne
+![screenshot](App-Screenshots/ForgotPassword.png)
 
-![App Screenshot](screenshots/JoinNowOne1.jpg)
-![App Screenshot](screenshots/JoinNowOne2.jpg)
+- OfflinePage 
 
-- JoinNowTwo
+![screenshot](App-Screenshots/OfflinePage.png)
 
-![App Screenshot](screenshots/JoinNowTwo1.jpg)
-![App Screenshot](screenshots/JoinNowTwo2.jpg)
+- LoadingPage 
 
-- JoinNowThree
+![screenshot](App-Screenshots/Loading.png)
 
-![App Screenshot](screenshots/JoinNowThree1.jpg)
-![App Screenshot](screenshots/JoinNowThree2.jpg)
-![App Screenshot](screenshots/JoinNowThree3.jpg)
+- ErrorPage 
 
-### In JoinNowThree page use can select one of the given subscription packages after selecting the package information will send to the parent component with the help of callbacks and it will passed to the payment page (JoinNowFiveOne component).
+![screenshot](App-Screenshots/Error.png)
 
-![App Screenshot](screenshots/JoinNowThree3.jpg)
-![App Screenshot](screenshots/JoinNowFiveOne3.jpg)
+- Tab Resolution Screenshots 
 
+![screenshot](App-Screenshots/TabScreen1.png)
+![screenshot](App-Screenshots/TabScreen2.png)
+![screenshot](App-Screenshots/TabScreen3.png)
 
-- JoinNowFour
+- Mobile Resolution Screenshots 
 
-![App Screenshot](screenshots/JoinNowFour1.jpg)
-![App Screenshot](screenshots/JoinNowFour2.jpg)
-![App Screenshot](screenshots/JoinNowFour3.jpg)
-
-- JoinNowFiveOne
-
-![App Screenshot](screenshots/JoinNowFiveOne1.jpg)
-![App Screenshot](screenshots/JoinNowFiveOne2.jpg)
-
-- JoinNowFiveTwo
-
-![App Screenshot](screenshots/JoinNowFiveTwo1.jpg)
-![App Screenshot](screenshots/JoinNowFiveTwo2.jpg)
-
-- Account
-
-### In Account page i have used regular Expression which will confirm the email Input by the user If the Email have a valid syntax then user able to navigate on Sign In page ###
-
-### inputed Email will send to the parent component with the Help of callbacks after that parent component will send Email to the JoinNowOne Component. ###
-
-![App Screenshot](screenshots/Account1.jpg)
-![App Screenshot](screenshots/Account2.jpg)
-
-
-
-
-- OnlyOnNetflix
-
-![App Screenshot](screenshots/OnlyOnNetflix1.jpg)
-![App Screenshot](screenshots/OnlyOnNetflix2.jpg)
-![App Screenshot](screenshots/OnlyOnNetflix3.jpg)
-![App Screenshot](screenshots/OnlyOnNetflix4.jpg)
-![App Screenshot](screenshots/OnlyOnNetflix5.jpg)
-![App Screenshot](screenshots/OnlyOnNetflix6.jpg)
-![App Screenshot](screenshots/OnlyOnNetflix7.jpg)
-
-### OnlyOnNetflix have displayed the various movies and web-series information to get the information of movie or series user can click on that movie or series named img box after onclick one box wil open with information ###
-
-![App Screenshot](screenshots/OnlyOnNetflix8.jpg)
-
-
-
-- InvestorRelations
-
-![App Screenshot](screenshots/InvestorRelations1.jpg)
-![App Screenshot](screenshots/InvestorRelations2.jpg)
-![App Screenshot](screenshots/InvestorRelations3.jpg)
-![App Screenshot](screenshots/InvestorRelations4.jpg)
-![App Screenshot](screenshots/InvestorRelations5.jpg)
-
-- Jobs
-
-![App Screenshot](screenshots/Jobs1.jpg)
-![App Screenshot](screenshots/Jobs2.jpg)
-![App Screenshot](screenshots/Jobs3.jpg)
-![App Screenshot](screenshots/Jobs4.jpg)
-![App Screenshot](screenshots/Jobs5.jpg)
-
-### user can see a youTube video of Latest From Netflix on Click ###
-![App Screenshot](screenshots/Jobs3.jpg)
-![App Screenshot](screenshots/Jobs6.jpg)
-
-- MediaCenter
-
-![App Screenshot](screenshots/MediaCenter1.jpg)
-![App Screenshot](screenshots/MediaCenter2.jpg)
-![App Screenshot](screenshots/MediaCenter3.jpg)
-![App Screenshot](screenshots/MediaCenter4.jpg)
-![App Screenshot](screenshots/MediaCenter5.jpg)
-
-### MediaCenter contains the movies and series information releasing in Octomber 2023 ##
-
-### on onclick of series or movie img box one modal box will open with information of that series or movie ###
-![App Screenshot](screenshots/MediaCenter6.jpg)
-
-### user can select different catagories of movies and series the content will be displayed based on catagory ###
-![App Screenshot](screenshots/MediaCenter7.jpg)
-![App Screenshot](screenshots/MediaCenter8.jpg)
-
-
-
-- WayToWatch
-
-![App Screenshot](screenshots/WayToWatch1.jpg)
-![App Screenshot](screenshots/WayToWatch2.jpg)
-![App Screenshot](screenshots/WayToWatch3.jpg)
-
-### WayToWatch page have on horizontal box contains different devices list each device have different content user can click to see ###
-![App Screenshot](screenshots/WayToWatch4.jpg)
-
-
-
-- ContactUs
-
-![App Screenshot](screenshots/ContactUs1.jpg)
-![App Screenshot](screenshots/ContactUs2.jpg)
-
-- CoockiePreferences
-
-![App Screenshot](screenshots/CookiePreferences.jpg)
-
-- ForgotPassword
-
-![App Screenshot](screenshots/ForgotPassword1.jpg)
-![App Screenshot](screenshots/ForgotPassword2.jpg)
-
-
-- HelpCenter
-
-![App Screenshot](screenshots/HelpCenter1.jpg)
-![App Screenshot](screenshots/HelpCenter2.jpg)
-
-
-- TermsOfUse
-
-![App Screenshot](screenshots/TermsOfUse1.jpg)
-![App Screenshot](screenshots/TermsOfUse2.jpg)
-![App Screenshot](screenshots/TermsOfUse3.jpg)
-![App Screenshot](screenshots/TermsOfUse4.jpg)
-![App Screenshot](screenshots/TermsOfUse5.jpg)
-
-
-
-- LegalNotice
-
-![App Screenshot](screenshots/LegalNotice1.jpg)
-![App Screenshot](screenshots/LegalNotice2.jpg)
-
-- Privacy
-
-![App Screenshot](screenshots/Privacy1.jpg)
-![App Screenshot](screenshots/Privacy2.jpg)
-![App Screenshot](screenshots/Privacy3.jpg)
-![App Screenshot](screenshots/Privacy4.jpg)
-![App Screenshot](screenshots/Privacy5.jpg)
-![App Screenshot](screenshots/Privacy6.jpg)
-
-- FAQ
-
-![App Screenshot](screenshots/FAQ1.jpg)
-![App Screenshot](screenshots/FAQ2.jpg)
-![App Screenshot](screenshots/FAQ3.jpg)
-![App Screenshot](screenshots/FAQ4.jpg)
-![App Screenshot](screenshots/FAQ5.jpg)
-![App Screenshot](screenshots/FAQ6.jpg)
-![App Screenshot](screenshots/FAQ7.jpg)
-![App Screenshot](screenshots/FAQ8.jpg)
-
-- CorporateInformation
-
-![App Screenshot](screenshots/CorporateInformation1.jpg)
-![App Screenshot](screenshots/CorporateInformation2.jpg)
-![App Screenshot](screenshots/CorporateInformation3.jpg)
-![App Screenshot](screenshots/CorporateInformation4.jpg)
-
-
-- Mobile Screen view of some pages
-
-    - HomePage
-
-![App Screenshot](screenshots/HomePageMobile1.jpg)
-![App Screenshot](screenshots/HomePageMobile2.jpg)
-![App Screenshot](screenshots/HomePageMobile3.jpg)
-![App Screenshot](screenshots/HomePageMobile4.jpg)
-![App Screenshot](screenshots/HomePageMobile5.jpg)
-![App Screenshot](screenshots/HomePageMobile6.jpg)
-
- - HelpCenter
-
-![App Screenshot](screenshots/HelpCenterMobile1.jpg)
-![App Screenshot](screenshots/HelpCenterMobile2.jpg)
-![App Screenshot](screenshots/HelpCenterMobile3.jpg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![screenshot](App-Screenshots/MobileScreen1.png)
+![screenshot](App-Screenshots/MobileScreen2.png)
+![screenshot](App-Screenshots/MobileScreen3.png)
 
 
 
