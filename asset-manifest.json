@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Responsive-Instagram-Web-App-Frontend-Clone/static/css/main.3d207175.css",
-    "main.js": "/Responsive-Instagram-Web-App-Frontend-Clone/static/js/main.6a3f2b41.js",
+    "main.js": "/Responsive-Instagram-Web-App-Frontend-Clone/static/js/main.a824bd8c.js",
     "static/media/swimming.mp4": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/swimming.6780ad8a528744f6594a.mp4",
     "static/media/motogp.mp4": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/motogp.095311b2dbe06bf177b7.mp4",
     "static/media/gopro.mp4": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/gopro.06d2a7b5adc26d65411b.mp4",
@@ -52,10 +52,10 @@
     "static/media/loading-logo.png": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/loading-logo.4a85fa308a481f4ce479.png",
     "index.html": "/Responsive-Instagram-Web-App-Frontend-Clone/index.html",
     "main.3d207175.css.map": "/Responsive-Instagram-Web-App-Frontend-Clone/static/css/main.3d207175.css.map",
-    "main.6a3f2b41.js.map": "/Responsive-Instagram-Web-App-Frontend-Clone/static/js/main.6a3f2b41.js.map"
+    "main.a824bd8c.js.map": "/Responsive-Instagram-Web-App-Frontend-Clone/static/js/main.a824bd8c.js.map"
   },
   "entrypoints": [
     "static/css/main.3d207175.css",
-    "static/js/main.6a3f2b41.js"
+    "static/js/main.a824bd8c.js"
   ]
 }
