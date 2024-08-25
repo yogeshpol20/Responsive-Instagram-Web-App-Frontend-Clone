@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Responsive-Instagram-Web-App-Frontend-Clone/static/css/main.3d207175.css",
-    "main.js": "/Responsive-Instagram-Web-App-Frontend-Clone/static/js/main.db143390.js",
+    "main.css": "/Responsive-Instagram-Web-App-Frontend-Clone/static/css/main.514187b6.css",
+    "main.js": "/Responsive-Instagram-Web-App-Frontend-Clone/static/js/main.1b8e81c6.js",
     "static/media/swimming.mp4": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/swimming.6780ad8a528744f6594a.mp4",
     "static/media/motogp.mp4": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/motogp.095311b2dbe06bf177b7.mp4",
     "static/media/gopro.mp4": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/gopro.06d2a7b5adc26d65411b.mp4",
@@ -44,18 +44,17 @@
     "static/media/ducati.jpg": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/ducati.8f6ee5b40ebe5cd9047a.jpg",
     "static/media/gopro.jpg": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/gopro.82cc19cd0e459b506514.jpg",
     "static/media/noprofile.jpg": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/noprofile.7fe14f0accd9979e3303.jpg",
-    "static/media/offline-logo.png": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/offline-logo.31e0bf1a7b254aea8364.png",
     "static/media/coffeeshop.jpg": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/coffeeshop.05d11f1e17f7892be8b7.jpg",
     "static/media/omega.jpg": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/omega.aa689cc38f07d3b69f25.jpg",
     "static/media/redbullracing.jpg": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/redbullracing.ca814336060b52453353.jpg",
     "static/media/logo.png": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/logo.b4722adb46273800d6e6.png",
     "static/media/loading-logo.png": "/Responsive-Instagram-Web-App-Frontend-Clone/static/media/loading-logo.4a85fa308a481f4ce479.png",
     "index.html": "/Responsive-Instagram-Web-App-Frontend-Clone/index.html",
-    "main.3d207175.css.map": "/Responsive-Instagram-Web-App-Frontend-Clone/static/css/main.3d207175.css.map",
-    "main.db143390.js.map": "/Responsive-Instagram-Web-App-Frontend-Clone/static/js/main.db143390.js.map"
+    "main.514187b6.css.map": "/Responsive-Instagram-Web-App-Frontend-Clone/static/css/main.514187b6.css.map",
+    "main.1b8e81c6.js.map": "/Responsive-Instagram-Web-App-Frontend-Clone/static/js/main.1b8e81c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d207175.css",
-    "static/js/main.db143390.js"
+    "static/css/main.514187b6.css",
+    "static/js/main.1b8e81c6.js"
   ]
 }
