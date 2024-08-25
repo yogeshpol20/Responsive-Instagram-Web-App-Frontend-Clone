@@ -2,7 +2,7 @@ import React from "react";
 import "../Styles/Pages/OfflinePage.css";
 import CloudOffOutlinedIcon from "@mui/icons-material/CloudOffOutlined";
 import PageTitle from "../Components/PageTitle";
-import logo from '../assets/images/offline-logo.png';
+
 
 const OfflinePage = () => {
   return (
@@ -11,7 +11,7 @@ const OfflinePage = () => {
       <article className="centerContainer">
 
         <div className="appIconContainer">
-          <img src={logo} alt="Instagram" />
+        <img src={process.env.PUBLIC_URL + "/offline-logo.png"} alt="Instagram" />
         </div>
 
         <div className="errorContainer">

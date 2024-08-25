@@ -29,6 +29,7 @@ import island from "../assets/images/vacation.jpg";
 
 import { SwitchLoginFormContext } from "../App";
 import { UnfollowModalContext } from "../App";
+import LogOutModal from "../Components/LogOutModal";
 
 
 export const PostMoreOptionContext = createContext();
@@ -121,7 +122,7 @@ const HomePage = ({adminUser}) => {
       <PageTitle title="Instagram" />
       <article className="homePage">
         <ProgressBar />
-
+       
         {isSwitchLoginForm && <SwitchLoginForm />}
 
         {isUnfollow && <UnfollowModal />}

@@ -86,12 +86,12 @@
 @media screen and (max-width: 767px) {
 
     .hp-rightSide {
-        width: calc(100%);
+        width: 100vw;
         height: calc(100vh - 120px);
         margin: 60px auto;
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        /* min-height: 100vh; */
     }
 
     .hp-loadingEffect {

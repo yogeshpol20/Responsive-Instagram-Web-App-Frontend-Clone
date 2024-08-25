@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Styles/Components/Sidenav.css";
-import { Link, useLocation} from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { GoHomeFill } from "react-icons/go";
 import { IoSearchOutline } from "react-icons/io5";
 import { MdOutlineExplore } from "react-icons/md";
@@ -24,12 +24,9 @@ import reelsIcon from "../assets/images/reels-icon.png";
 
 import SidenavMore from "./SidenavMore";
 
-
-
-const Sidenav = ({adminUser}) => {
-
+const Sidenav = ({ adminUser }) => {
   const location = useLocation();
- 
+
   const [moreOption, setMoreOption] = useState(false);
 
   const [optionBtnStyle, setOptionBtnStyle] = useState({ fontWeight: "480" });
@@ -42,15 +39,18 @@ const Sidenav = ({adminUser}) => {
   };
 
   const optionStyle = (path) => {
-    return location.pathname === path ? { fontWeight: "700" } : { fontWeight: "480" }
+    return location.pathname === path
+      ? { fontWeight: "700" }
+      : { fontWeight: "480" };
   };
 
-  const handleOptionBtnStyle =()=>{
-    setOptionBtnStyle({fontWeight:"700"});
-  }
+  const handleOptionBtnStyle = () => {
+    setOptionBtnStyle({ fontWeight: "700" });
+  };
 
   return (
     <div className="sidenav">
+
       <div className="sidenav-header">
         <img src={logo} alt="Instagram logo" className="insta-logo" />
         <Link to="/homepage" className="insta-icon-container">
@@ -148,10 +148,10 @@ const Sidenav = ({adminUser}) => {
         </button>
 
         {moreOption && (
-          <aside className="sidenav-moreOption">
-            <SidenavMore setMoreOption={setMoreOption} />
-          </aside>
-        )}
+        <aside className="sidenav-moreOption">
+          <SidenavMore setMoreOption={setMoreOption} />
+        </aside>
+      )}
 
         <button className="sidenav-button">
           <Link to="/profilepage" className="sidenav-BtnLink">

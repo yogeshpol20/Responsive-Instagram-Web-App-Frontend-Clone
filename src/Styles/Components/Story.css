@@ -81,3 +81,21 @@
 .scrollButton.right {
     right: 0;
 }
+
+/* @media screen and (max-width:767px){
+
+    .story {
+       display: none;
+    }
+
+    .storyContainer{
+       width:fit-content;
+    }
+    .storyUser {
+        width: fit-content;
+        height: fit-content;
+    }
+    .storyUserPhoto {
+        height: fit-content;
+    }
+} */

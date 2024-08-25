@@ -63,7 +63,7 @@
 
 .postTimeSeparator {
   color: rgb(115, 115, 115);
-  margin: 0 -2px;
+  margin: 0px 3px;
 }
 
 .postTime,
@@ -82,6 +82,9 @@
 .postContent {
   position: relative;
   max-width: 100%;
+
+  /* width: min(470px, 100vw); */
+  /* width: calc(-2px + min(470px, 100vw)); */
 }
 
 .postImg {
@@ -98,7 +101,7 @@
   border-radius: 4px;
   border: 1px solid rgb(219, 219, 219);
   background-color: black;
-  padding: 0 20px;
+  /* padding: 0px 20px; */
 }
 
 .videoContainer {
@@ -250,20 +253,66 @@ textarea::placeholder {
   cursor: pointer;
 }
 
+
+/* @media screen and (max-width:767) {
+
+  .post {
+    width: 300px;
+    height: 300px;
+  }
+
+  .postContent {
+    width: 300px;
+    height: 300px;
+  }
+
+  .postImg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .postVideo {
+    width: 300px;
+    height: 300px;
+    padding: 0;
+  }
+
+} */
+
+
 /* @media screen and (max-width:500px) {
   .post {
     overflow: hidden;
   }
 
+  .postContent {
+    width:320px;
+    height: 400px;
+  }
+
   .postImg {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
   }
   
   .postVideo {
-    width: 100%;
-    height: auto;
-    padding: 0;
+    width: 320px;
+    height: 400px;
+    padding: 0px;
+  }
+  .videoContainer{
+    width: 320px;
+  }
+
+  .videoPlayPauseButton {
+    font-size: 70px;
+    top: 41.5%;
+    left: 40%;
+  }
+  
+  .videoMuteUnmute {
+    top: 87%;
+    left: 87.9%;
   }
 } */

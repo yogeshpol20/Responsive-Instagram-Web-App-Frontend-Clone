@@ -12,8 +12,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 32px;
-    padding-bottom: 32px;
+    margin-top: 12px;
+    /* padding-bottom: 32px; */
     margin-left: auto;
     margin-right: auto;
     max-width: 935px;
@@ -48,14 +48,23 @@
 }
 
 @media screen and (max-width: 875px) {
+
+    .authPage {
+        overflow-x: hidden;
+    }
+
     .authMain {
         flex-direction: column;
         /* Stack the content vertically on small screens */
-        margin-top: 30px;
-        padding-bottom: 0;
+        margin-top: 35px;
+        padding-bottom: 32px;
     }
 
     .leftContainer {
         display: none;
+    }
+
+    .rightContainer {
+        margin-left: 0px;
     }
 }

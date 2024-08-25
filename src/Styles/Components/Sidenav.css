@@ -121,6 +121,8 @@
 }
 
 
+
+
 @media (min-width: 1264px) and (max-width: 1919px) {
     .sidenav {
         width: 244px;
@@ -130,8 +132,10 @@
     }
 
     .sidenav-moreOption {
-        position: fixed;
-        transform: translate(25px, 390px);
+        position: absolute;
+        left: 15px;
+        bottom: 80px;
+        z-index: 12;
     }
 }
 
@@ -143,12 +147,6 @@
         z-index: 10;
         padding: auto;
         background-color: rgb(255, 255, 255);
-    }
-
-    .sidenav-moreOption {
-        position: fixed;
-        z-index: 20;
-        transform: translate(155px, 260px);
     }
 
     .insta-logo {
@@ -172,6 +170,13 @@
         opacity: 0;
     }
 
+    .sidenav-moreOption {
+        position: absolute;
+        left: 60px;
+        bottom: 60px;
+        z-index: 12;
+    }
+
 }
 
 @media screen and (max-width:767px) {
@@ -181,7 +186,8 @@
     .search-btn,
     .notification-btn,
     .menu-btn,
-    .thread-btn {
+    .thread-btn,
+    .sidenav-moreOption {
         display: none;
     }
 

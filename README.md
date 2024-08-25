@@ -3,9 +3,16 @@
 ## Description :
 This ReactJS project is a sleek, responsive web application that emulates Instagram's functionalities. It features 10 pages, including user profile, home feeds, and post detail views. Users can seamlessly browse contents, like and comment on them. The app's design ensures optimal performance and visual appeal across various devices and screen sizes, mimicking the smooth and engaging experience of Instagram.
 
-This project highlights my proficiency in front-end development, responsive design.
+This project showcases my proficiency in front-end development and responsive design. I plan to add some new features in the future to enhance it further.
 
-Have a look (username: yogesh_pol password: Pass@1234) - https://yogeshpol20.github.io/Responsive-Instagram-Web-App-Frontend-Clone/
+## Live Demo
+
+You can view the live demo of the project [here](https://yogeshpol20.github.io/Responsive-Instagram-Web-App-Frontend-Clone/).
+
+**Login Credentials:**
+- **Username:** `yogesh_pol`
+- **Password:** `Demo@1234`
+
 
 
 ## Key features of the Web App include:

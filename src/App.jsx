@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { createContext, useEffect, useState } from "react";
 import { useNetworkStatus } from "./Components/NetworkStatus";
 import OfflinePage from "./Pages/OfflinePage";
@@ -18,6 +18,9 @@ import jennifer from './assets/images/jeniffer.jpg';
 import biker from './assets/images/biker.jpg';
 import coffeeshop from './assets/images/coffeeshop.jpg';
 import noprofile from './assets/images/noprofile.jpg';
+import PasswordField from "./Components/PasswordField";
+import LogOutModal from "./Components/LogOutModal";
+
 
 export const SwitchLoginFormContext = createContext();
 export const UnfollowModalContext = createContext();
@@ -71,7 +74,19 @@ const App = () => {
 
   const [loading, setLoading] = useState(true);
 
+
+  //code for resetting scroll amount.
+  let currLocation = useLocation();
   useEffect(() => {
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100); // Adjust the delay as needed
+    return () => clearTimeout(timer);
+  }, [currLocation]);
+  
+
+  useEffect(() => {
+
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1500);
@@ -88,7 +103,7 @@ const App = () => {
 
   const adminUser = {
     username: "yogesh_pol",
-    password: "Pass@1234",
+    password: "Demo@1234",
     followers: 158,
     following: 385,
     posts: 0,
@@ -161,6 +176,7 @@ const App = () => {
                 path="/profilepage"
                 element={<ProfilePage adminUser={adminUser} />}
               />
+              <Route path="/logout" element={<LogOutModal/>}/>
               <Route path="/loading" element={<LoadingPage />} />
 
               <Route path="*" element={<ErrorPage />} />

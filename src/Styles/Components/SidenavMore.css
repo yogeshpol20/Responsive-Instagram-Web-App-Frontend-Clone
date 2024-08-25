@@ -9,6 +9,10 @@
     flex-direction: column;
     padding: 8px;
     z-index: 11;
+
+    /* position: relative;
+    bottom: 100px;
+    left: -12px; */
 }
 
 .sidenavMore-links {

@@ -20,11 +20,15 @@
     padding: 8px;
     /* Reduce padding for smaller screens */
   }
+
+  .LoginPage {
+    overflow-x: hidden;
+  }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 450px) {
   .LoginPage-main {
     padding: 4px;
-    /* Further reduce padding for very small screens */
+    /* Reduce padding for smaller screens */
   }
 }

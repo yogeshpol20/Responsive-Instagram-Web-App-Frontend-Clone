@@ -1,7 +1,7 @@
 import React, { useState, useRef, useContext, useEffect } from "react";
 import "../Styles/Components/Post.css";
 import { Link } from "react-router-dom";
-import { LuDot, LuSend } from "react-icons/lu";
+import { LuSend } from "react-icons/lu";
 import { BsThreeDots } from "react-icons/bs";
 import { FaRegHeart, FaHeart, FaRegBookmark, FaBookmark } from "react-icons/fa";
 import { TbMessageCircle } from "react-icons/tb";
@@ -128,9 +128,7 @@ const Post = ({ user, profilePhoto, verified, time, location, photo, video, like
               <span className="postProfileName">{user}</span>
             </Link>
             {verified && <MdVerified className="userVerification" />}
-            <span className="postTimeSeparator">
-              <LuDot />
-            </span>
+            <span className="postTimeSeparator">&middot;</span>
             <Link to="#" className="postLinks">
               <span className="postTime">{time}</span>
             </Link>

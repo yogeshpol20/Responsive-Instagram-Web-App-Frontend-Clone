@@ -59,7 +59,7 @@ const ProfilePage = ({adminUser}) => {
 
   return (
     <>
-      <PageTitle title="yogesh Pol (@yogesh_pol) &middot; Instagram" />
+      <PageTitle title={`${adminUser.profileName} (@${adminUser.username}) · Instagram`}/>
 
       <createNewPostContext.Provider 
       value={{isUploadContent, setIsUploadContent}}>

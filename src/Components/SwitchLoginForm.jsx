@@ -7,15 +7,14 @@ import { IoMdClose } from "react-icons/io";
 import InstagramLogo from "./InstagramLogo";
 
 import { SwitchLoginFormContext } from "../App";
+import PasswordField from "./PasswordField";
 
 const SwitchLoginForm = () => {
   const { setIsSwitchloginForm } = useContext(SwitchLoginFormContext);
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [type, setType] = useState("password");
-  const [btnName, setBtnName] = useState("Show");
-  const [showBtnStyle, setShowBtnStye] = useState({ visibility: "hidden" });
+
   const [logInBtnStyle, setLoginBtnStyle] = useState({
     opacity: "0.7",
     backgroundColor: "rgb(0,149,246)",
@@ -63,21 +62,6 @@ const SwitchLoginForm = () => {
     }
   };
 
-  const showPassword = () => {
-    if (type === "password") {
-      setType("text");
-      setBtnName("Hide");
-    } else {
-      setType("password");
-      setBtnName("Show");
-    }
-  };
-
-  const handlePassword = (e) => {
-    setPassword(e.target.value);
-    setShowBtnStye({ visibility: "visible" });
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     handleLogin();
@@ -103,24 +87,11 @@ const SwitchLoginForm = () => {
             type="text"
             label="Phone number, username, or email"
           />
-          <div className="slf-passwordInput">
-            <Input
-              value={password}
-              onChange={handlePassword}
-              type={type}
-              label="Password"
-            />
-            {password !== "" && (
-              <button
-                className="slf-passBtn"
-                style={showBtnStyle}
-                onClick={showPassword}
-                type="button"
-              >
-                {btnName}
-              </button>
-            )}
-          </div>
+
+          <PasswordField 
+            password={password}
+            setPassword={setPassword}
+          />
 
           <div className="saveLoginInfo">
             <input type="checkbox" id="savelogininfo" value="accountdetails" />

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import "../Styles/Components/PasswordInput.css";
-import Input from "./Input";
+import "../Styles/Components/PasswordField.css";
 
-const PasswordInput = () => {
-  const [password, setPassword] = useState("");
+const PasswordField = ({password,setPassword}) => {
   const [type, setType] = useState("password");
   const [btnName, setBtnName] = useState("Show");
   const [showBtnStyle, setShowBtnStye] = useState({ visibility: "hidden" });
@@ -24,16 +22,19 @@ const PasswordInput = () => {
   };
 
   return (
-    <form className="password-input">
-      <Input
+    <div className="passwordField">
+      <input
+        type={type}
         value={password}
         onChange={handlePassword}
-        type={type}
-        label="Password"
+        className="passwordField-input"
+        placeholder=" "
       />
+      <label className="passwordField-placeholder">Password</label>
+
       {password !== "" && (
         <button
-          className="lf-passBtn"
+          className="passwordField-button"
           style={showBtnStyle}
           onClick={showPassword}
           type="button"
@@ -41,8 +42,8 @@ const PasswordInput = () => {
           {btnName}
         </button>
       )}
-    </form>
+    </div>
   );
 };
 
-export default PasswordInput;
+export default PasswordField;

@@ -18,7 +18,7 @@ const SidenavMore = ({setMoreOption}) => {
   //Logout Functionality
   const logout = () => {
     localStorage.removeItem("user");
-    navigate("/"); // Redirect to authpage
+    navigate("/logout"); // Redirect to authpage
   };
 
   const handleSwitchAccount = () => {

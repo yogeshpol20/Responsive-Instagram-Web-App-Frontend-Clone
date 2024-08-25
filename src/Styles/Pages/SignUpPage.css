@@ -54,10 +54,10 @@
 .info-span {
   line-height: 16px;
   font-weight: 400;
-  display: block;
+  display: inline-block;
 }
 
-.info-anchor {
+.info-link {
   text-decoration: none;
   color: rgb(0, 55, 107);
 }
@@ -81,12 +81,25 @@
 
 .login-link {
   text-decoration: none;
+  color: rgb(0, 149, 246);
 }
 
 .login-link span {
-  color: rgb(0, 149, 246);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
   padding-left: 3px;
+}
+
+@media screen and (max-width:450px) {
+
+  .signup-form-div,
+  .login-div {
+    border: none;
+  }
+
+  .signup-page {
+    overflow-x: hidden;
+  }
+
 }

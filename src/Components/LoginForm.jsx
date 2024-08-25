@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import GetApp from "./GetApp";
 import InstagramLogo from "./InstagramLogo";
 import Button from "./Button";
+import PasswordField from "./PasswordField";
 
 const LoginForm = ({authorizeUser}) => {
   const navigate = useNavigate();
@@ -15,9 +16,6 @@ const LoginForm = ({authorizeUser}) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loginError, setLoginError] = useState({ display: "none" });
-  const [type, setType] = useState("password");
-  const [btnName, setBtnName] = useState("Show");
-  const [showBtnStyle, setShowBtnStye] = useState({ visibility: "hidden" });
   const [logInBtnStyle, setLoginBtnStyle] = useState({
     opacity: "0.7",
     backgroundColor: "rgb(0,149,246)",
@@ -44,21 +42,6 @@ const LoginForm = ({authorizeUser}) => {
     }
   };
 
-  const showPassword = () => {
-    if (type === "password") {
-      setType("text");
-      setBtnName("Hide");
-    } else {
-      setType("password");
-      setBtnName("Show");
-    }
-  };
-
-  const handlePassword = (e) => {
-    setPassword(e.target.value);
-    setShowBtnStye({ visibility: "visible" });
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     handleLogin();
@@ -79,24 +62,12 @@ const LoginForm = ({authorizeUser}) => {
             type="text"
             label="Phone number, username, or email"
           />
-          <div className="lf-passwordInput">
-            <Input
-              value={password}
-              onChange={handlePassword}
-              type={type}
-              label="Password"
-            />
-            {password !== "" && (
-              <button
-                className="lf-passBtn"
-                style={showBtnStyle}
-                onClick={showPassword}
-                type="button"
-              >
-                {btnName}
-              </button>
-            )}
-          </div>
+          
+          <PasswordField
+            password={password}
+            setPassword={setPassword}
+          />
+         
           <Button
             style={logInBtnStyle}
             onMouseOver={(e) => {

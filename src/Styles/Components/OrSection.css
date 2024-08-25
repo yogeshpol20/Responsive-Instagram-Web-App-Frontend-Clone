@@ -6,13 +6,13 @@
   }
   
   .or-line {
-    height: 1px;
+    height: 0.8px;
     flex-grow: 1;
     background-color: rgb(219, 219, 219);
   }
   
   .or {
-    margin: 0 18px;
+    margin: 0px 18px;
     font-weight: 600;
     color: rgb(115, 115, 115);
     font-size: 0.8125rem;

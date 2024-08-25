@@ -30,6 +30,7 @@
     text-decoration-thickness: 0.5px;
     text-decoration-color: rgb(0, 55, 107);
 }
+
 .footer-link span {
     color: rgb(115, 115, 115);
     font-size: 12px;
@@ -67,5 +68,4 @@
     line-height: 16px;
     font-weight: 400;
     color: rgb(115, 115, 115);
-    
 }

@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import Footer from "../Components/Footer.jsx";
 import PageTitle from "../Components/PageTitle.jsx";
 import ButtonFbLoginTr from "../Components/ButtonFbLoginTr.jsx";
+import PasswordField from "../Components/PasswordField.jsx";
 
 const SignUpPage = () => {
   const [mobileOrEmail, setMobileOrEmail] = useState("");
@@ -48,7 +49,6 @@ const SignUpPage = () => {
     <>
       <PageTitle title="Sign up &middot; Instagram" />
       <article className="signup-page">
-
         <main className="signup-main">
           <section className="signup-container">
             <div className="signup-form-div">
@@ -68,7 +68,9 @@ const SignUpPage = () => {
                   <Input
                     type="text"
                     value={mobileOrEmail}
-                    onChange={(e) => setMobileOrEmail(e.target.value.toLowerCase())}
+                    onChange={(e) =>
+                      setMobileOrEmail(e.target.value.toLowerCase())
+                    }
                     label="Mobile Number or Email"
                   />
                 </div>
@@ -92,11 +94,9 @@ const SignUpPage = () => {
                 </div>
 
                 <div className="inputs">
-                  <Input
-                    type="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    label="Password"
+                  <PasswordField
+                    password={password}
+                    setPassword={setPassword}
                   />
                 </div>
 
@@ -105,21 +105,21 @@ const SignUpPage = () => {
                     <span className="info-span">
                       People who use our service may have uploaded your contact
                       information to Instagram.
-                      <Link to="#" className="info-anchor">
+                      <Link to="#" className="info-link">
                         Learn More
                       </Link>
                     </span>
                     <br />
-                    By signing up, you agree to our
-                    <Link to="#" className="info-anchor">
+                    By signing up, you agree to our {""}
+                    <Link to="#" className="info-link">
                       Terms
                     </Link>
-                    ,
-                    <Link to="#" className="info-anchor">
+                    , {""}
+                    <Link to="#" className="info-link">
                       Privacy Policy
                     </Link>
-                    and
-                    <Link to="#" className="info-anchor">
+                    {""} and {""}
+                    <Link to="#" className="info-link">
                       Cookies Policy
                     </Link>
                     .
@@ -155,14 +155,12 @@ const SignUpPage = () => {
             </div>
 
             <GetApp />
-            
           </section>
         </main>
 
         <footer>
           <Footer />
         </footer>
-
       </article>
     </>
   );

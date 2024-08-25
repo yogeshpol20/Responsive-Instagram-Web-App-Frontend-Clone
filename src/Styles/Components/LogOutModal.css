@@ -1,0 +1,55 @@
+.logOutModal {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    position:fixed;
+    z-index: 11;
+}
+
+.logOutModal-container {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logOutModal-info {
+    padding: 24px;
+    text-align: center;
+}
+
+.logOutModal-heading {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.logOutModal-message {
+    color: rgb(115, 115, 115);
+}
+
+.logOutModal-message,
+.logOutModal-link {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.logOutModal-link {
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid rgb(219, 219, 219);
+    text-align: center;
+    padding: 14px;
+}
+
+@media screen and (max-width:767px){
+    .logOutModal-container{
+        width: 300px;
+    }
+}
+

@@ -13,7 +13,7 @@ const ProfileSettingModal = ({isSettingsOption,setIsSettingsOption}) => {
   //Logout Functionality
   const logout = () => {
     localStorage.removeItem("user");
-    navigate("/"); // Redirect to authpage
+    navigate("/logout"); // Redirect to authpage
   };
 
   const handleClickOutside = (event) => {

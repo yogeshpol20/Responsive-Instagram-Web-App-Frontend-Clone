@@ -38,30 +38,6 @@
     align-items: center;
 }
 
-.slf-passwordInput {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.slf-passBtn {
-    font-size: 14px;
-    line-height: 14px;
-    font-weight: 600;
-    color: rgb(38, 38, 38);
-    border: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
-    margin-left: -90px;
-    margin-bottom: 5px;
-    position: relative;
-}
-
-.slf-passBtn:hover {
-    color: rgb(150, 150, 150);
-}
-
 .saveLoginInfo {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -77,7 +53,6 @@
     font-weight: 400;
     cursor: pointer;
 }
-
 
 input[type=checkbox] {
     accent-color: black;
@@ -95,4 +70,11 @@ input[type=checkbox] {
     line-height: 16px;
     font-weight: 400;
     margin-top: 22px;
+}
+
+@media screen and (max-width:450px) {
+
+    .switchLoginForm-container {
+        width: 330px;
+    }
 }

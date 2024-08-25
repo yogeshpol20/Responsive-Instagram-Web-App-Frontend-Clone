@@ -21,30 +21,6 @@
   margin-top: 24px;
 }
 
-.lf-passwordInput {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.lf-passBtn {
-  border: none;
-  outline: none;
-  background: none;
-  cursor: pointer;
-  color: rgb(38, 38, 38);
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  margin-left: -85px;
-  position: relative;
-}
-
-.lf-passBtn:hover {
-  color: rgb(150, 150, 150);
-}
-
 .lf-errorMsg {
   color: rgb(237, 73, 86);
   margin: 10px 40px;
@@ -87,12 +63,20 @@
 
 .lf-signupLink {
   text-decoration: none;
+  color: rgb(0, 149, 246);
 }
 
 .lf-signupLink span {
-  color: rgb(0, 149, 246);
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
   padding-left: 3px;
+}
+
+@media screen and (max-width:450px) {
+
+  .loginForm-content,
+  .lf-createAccount {
+    border: none;
+  }
 }
