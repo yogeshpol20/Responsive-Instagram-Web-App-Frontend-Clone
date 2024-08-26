@@ -11,7 +11,7 @@ const OfflinePage = () => {
       <article className="centerContainer">
 
         <div className="appIconContainer">
-        <img src={process.env.PUBLIC_URL + "/offline-logo.png"} alt="Instagram" />
+        <img src="public/offline-logo.png" alt="Instagram" />
         </div>
 
         <div className="errorContainer">
