@@ -11,7 +11,8 @@ const OfflinePage = () => {
       <article className="centerContainer">
 
         <div className="appIconContainer">
-        <img src="public/offline-logo.png" alt="Instagram" />
+        <img src=  "https://yogeshpol20.github.io/Responsive-Instagram-Web-App-Frontend-Clone/offline-logo.png" alt="Instagram" />
+        
         </div>
 
         <div className="errorContainer">
